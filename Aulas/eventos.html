@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aulas de JavaScript</title>
+</head>
+<body>
+    <section>
+        <h2>Evento de Click</h2>
+    
+        <button type="submit" onclick="eventoClick()">Clique aqui</button>
+        <p class="displayClick"></p>
+        
+    </section>
+
+
+    <section>
+        <h2>Evento de Mouse</h2>
+        
+        <button type="submit" onmouseover="eventoMouse()">Evento de mouse</button>
+        <p class="displayMouse"></p>
+        
+    </section>
+    
+    <section>
+        <h2>Evento de Teclado KeyUp</h2>
+        
+        <input type="text" name="" id="keyUp" placeholder="Digite qualquer coisa" onkeyup="eventoKeyUp()">
+        <p class="displayKeyUp"></p>
+        
+    </section>
+    
+    <section>
+        <h2>Evento de Teclado KeyDown</h2>
+        
+        <input type="text" name="" id="keyDown" placeholder="Digite qualquer coisa" onkeydown="eventoKeyDown()">
+        <p class="displayKeyDown"></p>
+        
+    </section>
+    
+    
+    <section>
+        <h2>Evento de Teclado Ao apertar enter</h2>
+        
+        <input type="text" name="" id="keyEnter" placeholder="Digite qualquer coisa" onkeyup="eventoKeyEnter(event)">
+        <p class="displayKeyEnter"></p>
+        
+    </section>
+    
+    
+    <section>
+        <h2>Evento de mudança de estilos</h2>
+        <h3 id="title--H3">Cor Azul</h3>
+        <button type="submit" onclick="colorBlue()">Clique para aplicar a cor Azul</button>
+        <br><br>
+        <button type="submit" onclick="colorRed()">Clique para aplicar a cor Vermelho</button>
+        <br><br>
+        <button type="submit" onclick="colorGreen()">Clique para aplicar a cor Verde</button>
+        
+        
+    </section>
+
+    <section>
+        <h2>Evento de mostrar número</h2>
+        <p id="mostrarNumero">21 9 9591-5885</p>
+        <button type="submit" onclick="eventoMostrar()">Clique para mostrar o número</button>
+    </section>
+
+    <section>
+        <h2>Evento de mostrar número</h2>
+        <p id="mostrarNumero1">21 9 9591-5885</p>
+        <button type="submit" onclick="eventoMostrar1(this)">Clique para mostrar o número</button>
+    </section>
+    
+    <!-- SCRIPT -->
+    <script src="js/eventos.js"></script>
+</body>
+</html>
